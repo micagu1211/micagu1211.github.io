@@ -16,13 +16,23 @@
 
 	<div style="width:1000px; height:1000px; padding:5px;">
 
-	<img alt="llano" src="llano.jpg" style="width:300px; height:300px; border:1px solid blue; float:left;" />
-	<img alt="brown" src="brown.jpg" style="width:300px; height:300px; border:1px solid blue; float:left;" />
-	<img alt="kachina" src="kachina.jpg" style="width:300px; height:300px; border:1px solid blue; float:left;" />
-	<img alt="stagecoach" src="stagecoach.jpg" style="width:300px; height:300px; border:1px solid blue; float:left;" />
-	<img alt="rainbow" src="rainbow.jpg" style="width:300px; height:300px; border:1px solid blue; float:left;" />
-	<img alt="rio" src="falls.jpg" style="width:300px; height:300px; border:1px solid blue; float:left;" />
+	<img id="thumbnailImage" src="llano.jpg" style="width:300px; height:300px; border:1px solid blue; float:left;" />
+	<img id="thumbnailImage" src="brown.jpg" style="width:300px; height:300px; border:1px solid blue; float:left;" />
+	<img id="thumbnailImage" src="kachina.jpg" style="width:300px; height:300px; border:1px solid blue; float:left;" />
+	<img id="thumbnailImage" src="stagecoach.jpg" style="width:300px; height:300px; border:1px solid blue; float:left;" />
+	<img id="thumbnailImage" src="rainbow.jpg" style="width:300px; height:300px; border:1px solid blue; float:left;" />
+	<img id="thumbnailImage" src="falls.jpg" style="width:300px; height:300px; border:1px solid blue; float:left;" />
 
 </div>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+<script type="text/javascript">
+    $( document ).ready(function() {
+        $(".thumbnailImage").click(function(){
+        	$(this).attr('width', '500');
+    		$(this).attr('height', '500');
+        });
+    });  
+</script>
 </body>
